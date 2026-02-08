@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cake Chronicle — Chefs</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header>
+  <div class="wrap topbar">
+    <div class="brand">
+      <h1>Cake Chronicle</h1>
+      <small>chefs</small>
+    </div>
+
+<nav aria-label="main navigation">
+  <a href="./cakes.html">Cakes</a>
+  <a href="./chefs.html">Famous Chefs</a>
+  <a href="./restaurants.html">Cake Places</a>
+  <a href="./drinks.html">Drinks</a>
+  <a href="./timeline.html">Timeline</a>
+  <a href="./videos.html">Videos</a>
+</nav>
+
+
+
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <h2>Famous cake chefs</h2>
+    <p class="lead">Big cards, images, and names.</p>
+  </section>
+
+  <section>
+    <h3 class="section-title">Chefs</h3>
+
+    <div class="chef-grid" id="chefGrid"></div>
+  </section>
+
+  <footer>By Dev Sawhney</footer>
+</main>
+
+<script>
+  const chefs = [
+    { name: "Mary Berry", note: "British baking legend.", img: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1600&q=60" },
+    { name: "Paul Hollywood", note: "Bake judge energy.", img: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1600&q=60" },
+    { name: "Duff Goldman", note: "Cake builds + artistry.", img: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9f?auto=format&fit=crop&w=1600&q=60" },
+    { name: "Christina Tosi", note: "Milk Bar style sweets.", img: "https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=1600&q=60" },
+    { name: "Dominique Ansel", note: "Creative pastry inventor.", img: "https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=1600&q=60" },
+    { name: "Buddy Valastro", note: "Big celebration cakes.", img: "https://images.unsplash.com/photo-1542826438-bd32f43d626f?auto=format&fit=crop&w=1600&q=60" },
+    { name: "Pierre Hermé", note: "Pastry icon.", img: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1600&q=60" },
+    { name: "Prue Leith", note: "Flavour-first bakes.", img: "https://images.unsplash.com/photo-1514986888952-8cd320577b68?auto=format&fit=crop&w=1600&q=60" },
+    { name: "Nigella Lawson", note: "Comfort baking energy.", img: "https://images.unsplash.com/photo-1551024739-78e9d60c45ca?auto=format&fit=crop&w=1600&q=60" }
+  ];
+
+  const chefGrid = document.getElementById("chefGrid");
+  chefGrid.innerHTML = chefs.map(c => `
+    <article class="chef-card">
+      <img src="${c.img}" alt="${c.name}" loading="lazy">
+      <div class="chef-body">
+        <h3>${c.name}</h3>
+        <div class="meta">${c.note}</div>
+      </div>
+    </article>
+  `).join("");
+</script>
+</body>
+</html>

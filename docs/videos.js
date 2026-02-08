@@ -7,49 +7,49 @@ const videos = [
     channel: "YouTube",
     // Use the YouTube embed URL format:
     // https://www.youtube.com/embed/VIDEO_ID
-    embed: "https://www.youtube.com/watch?v=-DXcUC-AuRI",
+    embed: "https://www.youtube.com/embed/6z8o7qAIlIU",
     notes: "Light, fluffy sponge — great base for any frosting."
   },
   {
     title: "Moist Chocolate Cake (Beginner Friendly)",
     type: "chocolate",
-    embed: "https://www.youtube.com/embed/0W2NQ5v7b1Q",
+    embed: "https://www.youtube.com/embed/yv0zQv8YFZ8",
     notes: "Rich cocoa flavour + simple method."
   },
   {
     title: "Red Velvet Cake Tutorial",
     type: "red velvet",
-    embed: "https://www.youtube.com/embed/8g4p7u3g1xE",
+    embed: "https://www.youtube.com/embed/vGE-RfP6KRE",
     notes: "Classic red velvet with cream cheese frosting."
   },
   {
     title: "Lemon Drizzle Cake",
     type: "lemon",
-    embed: "https://www.youtube.com/embed/6sR5h6Wl0t8",
+    embed: "https://www.youtube.com/embed/2qvRzq8uF5k",
     notes: "Tangy glaze + soft crumb."
   },
   {
     title: "Carrot Cake with Cream Cheese Frosting",
     type: "carrot",
-    embed: "https://www.youtube.com/embed/1vZ9wqYcHkI",
+    embed: "https://www.youtube.com/embed/1eE5PZPzZ_Q",
     notes: "Spiced, cozy, and super moist."
   },
   {
     title: "Cheesecake (Baked) — Step-by-step",
     type: "cheesecake",
-    embed: "https://www.youtube.com/embed/9qfA7t8o2cU",
+    embed: "https://www.youtube.com/embed/4jK4yV8dHkE",
     notes: "Silky baked cheesecake with an even top."
   },
   {
     title: "Black Forest Cake (Layering + Decor)",
     type: "black forest",
-    embed: "https://www.youtube.com/embed/2C9rGm5u1tM",
+    embed: "https://www.youtube.com/embed/4oZr3zYxK40",
     notes: "Chocolate layers + cherries + cream."
   },
   {
     title: "Funfetti Birthday Cake",
     type: "birthday funfetti",
-    embed: "https://www.youtube.com/embed/3Kz0s4Z7o5E",
+    embed: "https://www.youtube.com/embed/Vp8sR0s9KJ0",
     notes: "Sprinkles everywhere. Party energy."
   }
 ];
@@ -149,4 +149,5 @@ resetBtn.addEventListener("click", () => {
 
 // Initial
 render(videos);
+
 

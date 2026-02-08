@@ -7,7 +7,7 @@ const videos = [
     channel: "YouTube",
     // Use the YouTube embed URL format:
     // https://www.youtube.com/embed/VIDEO_ID
-    embed: "https://www.youtube.com/embed/3dWgVYkV0Zc",
+    embed: "https://www.youtube.com/watch?v=-DXcUC-AuRI",
     notes: "Light, fluffy sponge — great base for any frosting."
   },
   {
@@ -149,3 +149,4 @@ resetBtn.addEventListener("click", () => {
 
 // Initial
 render(videos);
+

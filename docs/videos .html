@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cake Chronicle — Videos</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header>
+  <div class="wrap topbar">
+    <div class="brand">
+      <h1>Cake Chronicle</h1>
+      <small>videos</small>
+    </div>
+
+<nav aria-label="main navigation">
+  <a href="./cakes.html">Cakes</a>
+  <a href="./chefs.html">Famous Chefs</a>
+  <a href="./restaurants.html">Cake Places</a>
+  <a href="./drinks.html">Drinks</a>
+  <a href="./timeline.html">Timeline</a>
+  <a href="./videos.html" aria-current="page">Videos</a>
+
+</nav>
+
+
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <h2>Learn to bake,<br>one video at a time.</h2>
+    <p class="lead">
+      Pick a cake style, hit play, and follow along.
+    </p>
+
+    <div class="controls">
+      <div class="control" style="flex:1">
+        <span aria-hidden="true">Search:</span>
+        <input id="vidSearch" type="search" placeholder="Search videos (e.g. chocolate, red velvet)..." />
+      </div>
+
+      <button class="btn primary" id="shuffleBtn" type="button">Surprise me</button>
+      <button class="btn" id="resetBtn" type="button">Reset</button>
+    </div>
+
+ 
+
+
+  <section style="margin-top:18px;">
+    <h3 class="section-title">Cake Tutorials</h3>
+    <p class="section-desc">A mix of classics and crowd favourites. Use search to filter.</p>
+
+    <div class="video-grid" id="videoGrid"></div>
+    <p class="section-desc" id="noVideos" style="display:none;margin-top:12px;">
+      No matches. Try a different search.
+    </p>
+  </section>
+
+  <footer>By Dev Sawhney</footer>
+</main>
+
+<script src="videos.js"></script>
+</body>
+</html>
